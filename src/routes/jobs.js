@@ -1,6 +1,6 @@
 const express = require('express');
 const axios = require('axios');
-const authenticateToken = require('../src/middleware/auth');
+const authenticateToken = require('../middleware/auth');
 const router = express.Router();
 
 // get job list from specific link include the search and pagination

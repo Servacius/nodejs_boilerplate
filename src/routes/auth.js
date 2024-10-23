@@ -36,7 +36,7 @@ router.post('/login', async (req, res) => {
 });
 
 // check profile of current tokean bearer
-const authenticateToken = require('../src/middleware/auth');
+const authenticateToken = require('../middleware/auth');
 router.get('/profile', authenticateToken, (req, res) => {
     res.json({ message: `Welcome, ${req.user.username}` });
 });
